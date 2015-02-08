@@ -11,7 +11,7 @@
 					<p class="ghnotice">
 						By Jobro
 						<br> 
-							<a href = "https://github.com/jobro13-CardGames">Fork me on GitHub!</a>
+							<a href = "https://github.com/jobro13/CardGames">Fork me on GitHub!</a>
 						</br>
 					</p>
 				</div>
@@ -19,14 +19,18 @@
 			<div class="clearboth"> </div>
 		</header>
 		<section class="centered">
-			<form class="loginform" method="post" action="/processlogin.php">
+			<form class="loginform" method="post" action="/processlogin.lua">
 				<fieldset class = "loginheader">
 					Card games
 				</fieldset>
 				<fieldset class="loginvalues">
 					<label>
-						Game Name
+						Game Name (identifier)
 						<input type="text" name="gameid">
+					</label>
+					<label>
+						Screen name
+						<input type="text" name="uname">
 					</label>
 					<label>
 						Password (if applicable)
@@ -35,7 +39,8 @@
 				</fieldset>
 				<fieldset class="loginactions">
 					<input class="btn floatl" type="submit" name="submit" value="Play">
-					<a href="/register.php">Create game</a>
+					<a href="/ServerRoot/register.lua">Create game</a>
+					<a href="/ServerRoot/list.lua">List games</a>
 				</fieldset>
 			</form>
 		</section>
