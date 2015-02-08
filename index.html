@@ -1,0 +1,32 @@
+<html class="bodysize">
+	<head> 
+		<title>Card games</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400" type="text/css">
+	</head>
+	<body class="bodysize">
+		<section class="centered">
+			<form class="loginform" method="post" action="/processlogin.php">
+				<fieldset class = "loginheader">
+					Card games
+				</fieldset>
+				<fieldset class="loginvalues">
+					<label>
+						Game Name
+						<input type="text" name="gameid">
+					</label>
+					<label>
+						Password (if applicable)
+						<input type="text" name="gamepass">
+					</label>
+				</fieldset>
+				<fieldset class="loginactions">
+					<input class="btn floatl" type="submit" name="submit" value="Play">
+					<a href="/register.php">Create game</a>
+				</fieldset>
+			</form>
+		</section>
+	</body>
+</html>
+
+
