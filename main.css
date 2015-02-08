@@ -29,9 +29,9 @@ header {
 .logo {
 	color: rgb(220,220,220);
 	height: 100%;
-	margin: 0px 5%;
+	margin: 0px 75%;
 	background: #466368;
-	width: 90%;
+	width: 20%;
 
 	border: 5px solid #668388;
 	border-top: 0px;
@@ -112,20 +112,20 @@ div.clearboth {
 	position: relative;
 	font-family: Lato;
 	float: right;
-	width: 20%;
+	width: 100%;
 	min-height: 100%;
 	border: none;
-	border-left: 3px solid #668388;
-	
+	border-left: 0px solid #668388;
+	text-align: center;
 	margin: 0px;
 	height: 100%;
-	padding-left: 10px;
+	padding-left: 0px;
 }
 
 .ghnotice = {
 	font-family: Lato;
-	margin: 5px;
-	padding-left: 20px;
+	margin: 0px;
+	padding-left: 0px;
 }
 
 body {
