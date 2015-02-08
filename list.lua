@@ -11,7 +11,7 @@ function handle(r)
 		if not err then 
 			res, err = db:select(r,"SELECT * FROM games;")
 			if not err then 
-				r:write('<table border="1" class="gamelisttable">')
+				r:write('<table border="1" class="centeredhoriz gamelisttable">')
 				
 
 				local all = res(0,true);

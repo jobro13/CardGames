@@ -25,7 +25,7 @@ function make(title, qlist,  target, method)
 	end
 	append("</fieldset>")
 	append('<fieldset class="loginactions">\n')
-	append('<input class="btn floatl" type="submit" name="submit" value="Submit">\n')
+	append('<input class="btn floatl" type="submit" name="submit" value="Bevestig">\n')
 	append('</fieldset>\n')
 	append("</form>\n")
 	append("</section>\n")

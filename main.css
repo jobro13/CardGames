@@ -267,8 +267,16 @@ html {
 	transform: translate(-50%, -50%);
 }
 
+.centeredhoriz {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
 .gamelisttable {
-	border: 2px solid #466368;
+	border: 2px solid  #668388;
+	margin-top: 20px;
+	background-color:  #668388;
 }
 
 .gamelisttable td {
@@ -276,8 +284,8 @@ html {
 }
 
 .gamelisttable tr {
-	border: 2px solid #466368;
-	background-color: rgb(220,220,220);
+
+
 }
 
 .gamelisttable .tabtitle tr {
