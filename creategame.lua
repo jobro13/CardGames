@@ -9,11 +9,16 @@ function handle(r)
 				local res0 = res(-1)
 
 				if res0 == nil then 
-					affected, err = db:query(r, "INSERT INTO games VALUES ('" .. tab.gamename .."','"..r:md5(tab.pwd).."','"..tab.scrname.."');")
-					if not err then
-						r:puts("completed; " .. affected)
+					if (not tonumber(tab.numplayers)) or (tonumber(tab.numplayers) > 10) or tonumber(tab.numplayers) < 3 then
+						r:puts("enter player amount 3-10")
 					else 
-						r:puts("?" ..err)
+
+						affected, err = db:query(r, "INSERT INTO games VALUES ('" .. tab.gamename .."','"..r:md5(tab.pwd).."',"..tab.numplayers..","..os.time()..",0,0);")
+						if not err then
+							r:puts("completed; " .. affected)
+						else 
+							r:puts("?" ..err)
+						end
 					end
 				else 
 					r:puts(tostring(res0))

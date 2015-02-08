@@ -18,8 +18,8 @@ function handle(r)
 		type="password",
 	},
 	{
-		text = "Your screen name",
-		name = "scrname",
+		text = "Number of players",
+		name = "numplayers",
 		type="text",
 
 	}}
